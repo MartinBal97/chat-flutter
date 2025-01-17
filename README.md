@@ -8,7 +8,7 @@ A fun and simple chat application where you can ask any question, and the bot wi
 - **Minimalist Design**: A clean and user-friendly interface.  
 
 ## Demo 🚀  
-![App Demo](./assets/demo.png)
+![App Demo](./flutter_proyect/assets/demo.png)
 
 ## How It Works ⚙️  
 1. The user types a question into the chatbox.  
