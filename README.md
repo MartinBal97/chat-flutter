@@ -13,7 +13,11 @@ A fun and simple chat application where you can ask any question, and the bot wi
 3. The API responds with:  
    - A "Yes" or "No" answer.  
    - A related GIF URL.  
-4. The app displays the answer and the GIF in the chat window.  
+4. The app displays the answer and the GIF in the chat window.
+
+## Tech Stack 🛠️  
+- **Frontend**: Flutter.  
+- **API**: Yes/No API (https://yesno.wtf/api). 
 
 ## Demo 🚀  
 ![App Demo](./flutter_proyect/assets/demo.png)
