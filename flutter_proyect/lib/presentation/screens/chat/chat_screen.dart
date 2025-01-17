@@ -13,14 +13,14 @@ class ChatScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Office Manager M25'),
+        title: const Text('Office Manager'),
         centerTitle: false,
-        leading: const Padding(
-          padding: EdgeInsets.all(4.0),
-          child: CircleAvatar(
-              backgroundImage: NetworkImage(
-                  "https://media.licdn.com/dms/image/D4E03AQHABCcdxXKt0A/profile-displayphoto-shrink_800_800/0/1631023832784?e=1688601600&v=beta&t=SixNSJ2A0WI2KYtojI_J_qX4eH1kw6MbwjJSw1xa1Zo")),
-        ),
+        leading: Container(
+            padding: const EdgeInsets.all(4),
+            margin: const EdgeInsets.only(left: 12),
+            child: const CircleAvatar(
+              child: Icon(Icons.person),
+            )),
       ),
       body: _ChatView(),
     );

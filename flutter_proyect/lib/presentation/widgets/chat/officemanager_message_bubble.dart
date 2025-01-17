@@ -1,6 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-
 import 'package:flutter_proyect/domain/entities/message.dart';
 
 class OfficeManagerMessageBubble extends StatelessWidget {
@@ -50,7 +49,7 @@ class _ImageBubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final size = MediaQuery.sizeOf(context);
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
       child: Image.network(

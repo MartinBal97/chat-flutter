@@ -11,8 +11,9 @@ class MessageFieldBox extends StatelessWidget {
     final focusNode = FocusNode();
 
     final outlineInputBorder = UnderlineInputBorder(
-        borderSide: const BorderSide(color: Colors.transparent),
-        borderRadius: BorderRadius.circular(40));
+      borderSide: const BorderSide(color: Colors.transparent),
+      borderRadius: BorderRadius.circular(40),
+    );
 
     final inputDecoration = InputDecoration(
       hintText: 'Pregunta aqui...',
@@ -28,19 +29,22 @@ class MessageFieldBox extends StatelessWidget {
       ),
     );
 
-    return TextFormField(
-      keyboardAppearance: Brightness.dark,
-      onTapOutside: (event) {
-        focusNode.unfocus();
-      },
-      focusNode: focusNode,
-      controller: textController,
-      decoration: inputDecoration,
-      onFieldSubmitted: (value) {
-        onValue(value);
-        textController.clear();
-        focusNode.requestFocus();
-      },
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 10),
+      child: TextFormField(
+        keyboardAppearance: Brightness.dark,
+        onTapOutside: (event) {
+          focusNode.unfocus();
+        },
+        focusNode: focusNode,
+        controller: textController,
+        decoration: inputDecoration,
+        onFieldSubmitted: (value) {
+          onValue(value);
+          textController.clear();
+          focusNode.requestFocus();
+        },
+      ),
     );
   }
 }
