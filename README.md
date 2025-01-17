@@ -7,9 +7,6 @@ A fun and simple chat application where you can ask any question, and the bot wi
 - **Yes/No API**: The bot fetches random "Yes" or "No" answers with GIFs for a touch of humor.  
 - **Minimalist Design**: A clean and user-friendly interface.  
 
-## Demo 🚀  
-![App Demo](./flutter_proyect/assets/demo.png)
-
 ## How It Works ⚙️  
 1. The user types a question into the chatbox.  
 2. The app sends a request to the **Yes/No API**.  
@@ -17,3 +14,6 @@ A fun and simple chat application where you can ask any question, and the bot wi
    - A "Yes" or "No" answer.  
    - A related GIF URL.  
 4. The app displays the answer and the GIF in the chat window.  
+
+## Demo 🚀  
+![App Demo](./flutter_proyect/assets/demo.png)
